@@ -1022,9 +1022,14 @@ img {
     margin-bottom: 25px;
 }
 
+.footer .footer-logo {
+    background: transparent;
+}
+
 .footer .footer-logo img {
     height: 50px;
     filter: brightness(0) invert(1);
+    background: transparent;
 }
 
 .footer-links {
@@ -1150,8 +1155,17 @@ img {
         right: 0;
     }
 
-    .nav-links a {
+    .nav-links a,
+    .nav-menu a {
         color: white;
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .nav-links li,
+    .nav-menu li {
+        width: 100%;
     }
 
     .mobile-toggle,
