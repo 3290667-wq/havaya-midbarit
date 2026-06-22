@@ -1114,7 +1114,7 @@ img {
 @media (max-width: 1024px) {
     .hero {
         min-height: 100vh;
-        background: #fff;
+        background: #ffffff;
     }
 
     .hero-background {
@@ -1122,24 +1122,38 @@ img {
         top: 0;
         left: 0;
         right: 0;
-        height: 55%;
+        bottom: auto;
+        height: 65vh;
+        inset: auto;
     }
 
     .hero-bg-img {
         width: 100%;
         height: 100%;
+        max-width: none;
         object-fit: cover;
         object-position: center center;
+        position: relative;
+        left: auto;
+        top: auto;
     }
 
     .hero-background::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
         background: linear-gradient(
             to top,
             rgba(255, 255, 255, 1) 0%,
-            rgba(255, 255, 255, 0.8) 30%,
-            rgba(255, 255, 255, 0.3) 60%,
+            rgba(255, 255, 255, 0.9) 40%,
+            rgba(255, 255, 255, 0.5) 70%,
             rgba(255, 255, 255, 0) 100%
         ) !important;
+        inset: auto;
+        top: auto;
     }
 
     .hero-wrapper {
@@ -1244,7 +1258,7 @@ img {
     .hero {
         min-height: 100vh;
         padding: 0;
-        background: #fff;
+        background: #ffffff;
     }
 
     .hero-background {
@@ -1252,28 +1266,38 @@ img {
         top: 0;
         left: 0;
         right: 0;
-        height: 60%;
-    }
-
-    .hero-background::after {
-        background: linear-gradient(
-            to top,
-            rgba(255, 255, 255, 1) 0%,
-            rgba(255, 255, 255, 0.9) 20%,
-            rgba(255, 255, 255, 0.5) 40%,
-            rgba(255, 255, 255, 0) 70%
-        ) !important;
+        bottom: auto;
+        height: 60vh;
+        inset: auto;
     }
 
     .hero-bg-img {
-        position: absolute;
-        left: 0;
-        top: 0;
         width: 100%;
         height: 100%;
-        max-width: 100%;
-        object-position: center center;
+        max-width: none;
         object-fit: cover;
+        object-position: center center;
+        position: relative;
+        left: auto;
+        top: auto;
+    }
+
+    .hero-background::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        background: linear-gradient(
+            to top,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 0.9) 40%,
+            rgba(255, 255, 255, 0.5) 70%,
+            rgba(255, 255, 255, 0) 100%
+        ) !important;
+        inset: auto;
+        top: auto;
     }
 
     .hero-wrapper {
