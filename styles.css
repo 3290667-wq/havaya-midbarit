@@ -1113,54 +1113,31 @@ img {
    ============================================= */
 @media (max-width: 1024px) {
     .hero {
-        min-height: 100vh;
-        background: #ffffff;
-    }
-
-    .hero-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: auto;
-        height: 65vh;
-        inset: auto;
+        min-height: 90vh;
     }
 
     .hero-bg-img {
         width: 100%;
         height: 100%;
-        max-width: none;
         object-fit: cover;
-        object-position: center center;
-        position: relative;
-        left: auto;
-        top: auto;
+        object-position: center left;
     }
 
     .hero-background::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 50%;
         background: linear-gradient(
-            to top,
-            rgba(255, 255, 255, 1) 0%,
-            rgba(255, 255, 255, 0.9) 40%,
-            rgba(255, 255, 255, 0.5) 70%,
-            rgba(255, 255, 255, 0) 100%
-        ) !important;
-        inset: auto;
-        top: auto;
+            to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 25%,
+            rgba(255, 255, 255, 0.7) 40%,
+            rgba(255, 255, 255, 0.95) 55%,
+            rgba(255, 255, 255, 1) 70%,
+            rgba(255, 255, 255, 1) 100%
+        );
     }
 
     .hero-wrapper {
-        padding: 0 30px 30px;
+        padding: 120px 30px 60px;
         align-items: center;
-        min-height: auto;
-        margin-top: -10vh;
     }
 
     .hero-content-side {
@@ -1257,56 +1234,27 @@ img {
     }
 
     .hero {
-        min-height: 100vh;
-        padding: 0;
-        background: #ffffff;
-    }
-
-    .hero-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: auto;
-        height: 60vh;
-        inset: auto;
-    }
-
-    .hero-bg-img {
-        width: 100%;
-        height: 100%;
-        max-width: none;
-        object-fit: cover;
-        object-position: center center;
-        position: relative;
-        left: auto;
-        top: auto;
+        min-height: auto;
+        padding: 100px 0 40px;
     }
 
     .hero-background::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 50%;
         background: linear-gradient(
-            to top,
-            rgba(255, 255, 255, 1) 0%,
-            rgba(255, 255, 255, 0.9) 40%,
-            rgba(255, 255, 255, 0.5) 70%,
-            rgba(255, 255, 255, 0) 100%
-        ) !important;
-        inset: auto;
-        top: auto;
+            to bottom,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0.7) 30%,
+            rgba(255, 255, 255, 0.95) 50%,
+            rgba(255, 255, 255, 1) 100%
+        );
+    }
+
+    .hero-bg-img {
+        object-position: center top;
     }
 
     .hero-wrapper {
         justify-content: center;
-        align-items: center;
-        padding: 0 20px 20px;
-        min-height: auto;
-        margin-top: -5vh;
+        padding: 60px 20px 40px;
     }
 
     .hero-content-side {
