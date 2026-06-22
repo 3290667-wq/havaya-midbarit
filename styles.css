@@ -1238,21 +1238,20 @@ img {
 
     .hero-background::after {
         background: linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 0.3) 40%,
-            rgba(255, 255, 255, 0.8) 60%,
-            rgba(255, 255, 255, 1) 80%
+            to top,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 0.95) 15%,
+            rgba(255, 255, 255, 0.7) 30%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 70%
         );
     }
 
     .hero-bg-img {
         object-position: center top;
-        width: 85%;
-        height: auto;
-        object-fit: contain;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .hero-wrapper {
